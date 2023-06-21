@@ -1,4 +1,4 @@
-<?php require_once(PRIVATE_PATH . "../../../private/initialize.php") ?>
+<?php require_once( "../../../private/initialize.php") ?>
 
 <!doctype html>
 <?php $page_style='Staff Menu'; ?>
