@@ -35,11 +35,11 @@ $pages = [
 
 <?php  foreach($pages as $page) {?>
     <tr>
-        <td><?php echo $page["ID"]; ?></td>
-        <td><?php echo $page["Position"]; ?></td>
-        <td><?php echo $page["Visible"] == 1 ? 'true' : 'false'; ?></td>
-        <td><?php echo $page["Name"] ?>
-        <td><a class="action" href="<?php echo url_for('/staff/pages/show.php?id=' . $page["ID"]  ); ?>">View</a></td>
+        <td><?php echo h($page["ID"]); ?></td>
+        <td><?php echo h($page["Position"]); ?></td>
+        <td><?php echo h($page["Visible"] == 1 ? 'true' : 'false'); ?></td>
+        <td><?php echo h($page["Name"]); ?>
+        <td><a class="action" href="<?php echo url_for('/staff/pages/show.php?id=' . h(u($page["ID"])) ); ?>">View</a></td>
         <td><a class="action" href="">Edit</a></td>
         <td><a class="action" href="">Delete</a></td>
 

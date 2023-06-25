@@ -7,6 +7,6 @@
 $id = $_GET["ID"] ?? '1';
 
 
-echo htmlspecialchars("Page ID = " . $id);
+echo htmlspecialchars(u("Page ID = " . $id));
 
 ?>
